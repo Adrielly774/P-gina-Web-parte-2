@@ -1,0 +1,164 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="home">
+            <h1>Bem-vindo ao nosso site GYM SPORT</h1>
+            <p>Este é um site sobre Gym .</p>
+        </section>
+        <section id="sobre">
+            <h2>Sobre nós</h2>
+            <p>Nós somos uma empresa destinada a falar sobre assuntos sobre musculação e muito mais.</p>
+        </section>
+        <section id="contato">
+            <h2>Contato</h2>
+            <p>Entre em contato conosco para saber mais sobre as nossas propostas e projetos.</p>
+            <form> <input type="text" placeholder="Nome"> <input type="email" placeholder="E-mail"> <textarea
+                    placeholder="Mensagem"></textarea> <button>Enviar</button> </form>
+        </section>
+    </main>
+    <footer>
+        <p>© 2024 Site Responsivo</p>
+    </footer>
+</body>
+</html>
+‎styles.css
++144
+Original file line number	Diff line number	Diff line change
+@@ -0,0 +1,144 @@
+ /* Reset CSS */
+ * {
+     box-sizing: border-box;
+     margin: 0;
+     padding: 0;
+ }
+ body {
+     font-family: Arial, sans-serif;
+     font-size: 16px;
+     line-height: 1.5;
+     color: #333;
+     background-color: #07042c;
+ }
+ header {
+     background-color: #333;
+     color: #1e086e;
+     padding: 1em;
+     text-align: center;
+ }
+ nav ul {
+     list-style: none;
+     margin: 0;
+     padding: 0;
+     display: flex;
+     justify-content: space-between;
+ }
+ nav li {
+     margin-right: 20px;
+ }
+ nav a {
+     color: #ffffff;
+     text-decoration: none;
+ }
+ main {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 2em;
+ }
+ section {
+     background-color: #0da1ce;
+     padding: 1em;
+     margin-bottom: 20px;
+     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+ h1,
+ h2 {
+     color: #333;
+     margin-bottom: 10px;
+ }
+ p {
+     margin-bottom: 20px;
+ }
+ form {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 1em;
+ }
+ input,
+ textarea {
+     width: 100%;
+     padding: 10px;
+     margin-bottom: 20px;
+     border: 1px solid #ccc;
+ }
+ button {
+     background-color: #333;
+     color: #fff;
+     padding: 10px 20px;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+ }
+ button:hover {
+     background-color: #555;
+ }
+ footer {
+     background-color: #333;
+     color: #fff;
+     padding: 1em;
+     text-align: center;
+     clear: both;
+ }
+ /* Media Queries */
+ @media (max-width: 767px) {
+     main {
+         flex-direction: column;
+     }
+     section {
+         margin-bottom: 10px;
+     }
+     form {
+         flex-direction: column;
+     }
+     input,
+     textarea {
+         width: 100%;
+     }
+ }
+ @media (max-width: 480px) {
+     header {
+         padding: 0.5em;
+     }
+     nav ul {
+         flex-direction: column;
+     }
+     nav li {
+         margin-bottom: 10px;
+     }
+     main {
+         padding: 1em;
+     }
+     section {
+         padding: 0.5em;
+     }
+     form {
+         padding: 0.5em;
+     }
+ }
